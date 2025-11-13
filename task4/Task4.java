@@ -15,13 +15,13 @@ public class Task4 {
         Collections.sort(numbers);
 
         int n = numbers.size();
-        int minMoves = 0;
+        int minMov = 0;
         for (int i = 0; i < n / 2; i++) {
-            minMoves += numbers.get(n - 1 - i) - numbers.get(i);
+            minMov += numbers.get(n - 1 - i) - numbers.get(i);
         }
 
-        if (minMoves <= 20) {
-            System.out.println(minMoves);
+        if (minMov <= 20) {
+            System.out.println(minMov);
         } else {
             System.out.println("20 ходов недостаточно");
         }

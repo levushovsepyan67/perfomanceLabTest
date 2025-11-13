@@ -9,13 +9,13 @@ public class Task1 {
 
 
         StringBuilder result = new StringBuilder();
-        result.append(circularArray(n1, m1));
-        result.append(circularArray(n2, m2));
+        result.append(circularArr(n1, m1));
+        result.append(circularArr(n2, m2));
 
         System.out.print(result.toString());
     }
 
-    private static String circularArray(int n, int m) {
+    private static String circularArr(int n, int m) {
         StringBuilder element = new StringBuilder();
         int current = 0;
 

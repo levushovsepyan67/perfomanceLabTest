@@ -10,8 +10,8 @@ public class Task3 {
             if (line.contains("\"id\":")) {
                 String id = line.split(":")[1].replace(",", "").trim();
                 String valueLine = br.readLine();
-                String value = valueLine.split(":")[1].replace("\"", "").replace(",", "").trim();
-                values.put(id, value);
+                String val = valueLine.split(":")[1].replace("\"", "").replace(",", "").trim();
+                values.put(id, val);
             }
         }
         br.close();

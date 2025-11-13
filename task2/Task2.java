@@ -5,17 +5,17 @@ public class Task2 {
 
     public static void main(String[] args) throws Exception {
 
-        String ellipse = args[0];
-        String points = args[1];
+        String ellips = args[0];
+        String point = args[1];
 
-        Scanner sc = new Scanner(new File(ellipse));
+        Scanner sc = new Scanner(new File(ellips));
         double centerX = sc.nextDouble();
         double centerY = sc.nextDouble();
         double a = sc.nextDouble();
         double b = sc.nextDouble();
         sc.close();
 
-        sc = new Scanner(new File(points));
+        sc = new Scanner(new File(point));
 
         while (sc.hasNextLine()) {
             String line = sc.nextLine();
